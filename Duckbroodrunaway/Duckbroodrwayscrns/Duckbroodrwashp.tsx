@@ -46,6 +46,15 @@ const Duckbroodrwashp: React.FC = () => {
     };
   }, []);
 
+  React.useEffect(() => {
+    Object.values(shakeValuesRef.current).forEach(value => {
+      const id = value.addListener(({value}) => {
+        console.log('shakeValue', value);
+      });
+      return () => value.removeListener(id);
+    });
+  }, []);
+
   const shakeLockedButton = (id: string) => {
     const value = getShakeValue(id);
     shakeAnimRef.current[id]?.stop();

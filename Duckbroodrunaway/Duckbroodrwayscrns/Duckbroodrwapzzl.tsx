@@ -120,6 +120,16 @@ const Duckbroodrwapzzl: React.FC = () => {
     };
   }, []);
 
+  React.useEffect(() => {
+    Object.values(shakeRef.current).forEach(value => {
+      const id = value.addListener(({value}) => {
+        console.log('shakeValue', value);
+      });
+
+      return () => value.removeListener(id);
+    });
+  }, []);
+
   const shakeTrade = (id: string) => {
     const value = getShake(id);
     shakeAnimRef.current[id]?.stop();

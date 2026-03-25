@@ -31,16 +31,16 @@ const volcLertOnboardingData = [
   {
     id: 3,
     image: require('../../elements/images/duckbroon3.png'),
-    title: 'Collect Eggs, Unlock Ducklings',
+    title: 'Gather Eggs, Unlock Ducklings',
     buttonText: 'Next',
     description:
-      'Each successful return earns eggs. Use them to unlock new ducklings and earn more points.',
+      'Each successful return earns eggs. Use them to unlock new ducklings.',
   },
   {
     id: 4,
     image: require('../../elements/images/duckbroon4.png'),
     title: 'A Calm Place to Return',
-    buttonText: 'Play',
+    buttonText: 'Let’s Go',
     description:
       'Read quiet stories, take part in endless quizzes, and enjoy the game at your own pace.',
   },

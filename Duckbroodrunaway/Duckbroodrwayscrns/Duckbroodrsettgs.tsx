@@ -3,10 +3,9 @@ import React, {useMemo} from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 import {
   Image,
+  Linking,
   Platform,
-  Share,
   StyleSheet,
-  Switch,
   Text,
   TouchableOpacity,
   View,
@@ -42,13 +41,9 @@ const Duckbroodrsettgs: React.FC = () => {
   const shownStats = hasRealStats ? duckbroodCaughtStats : demoStats;
 
   const handleShareApp = async () => {
-    try {
-      await Share.share({
-        message: 'DuckBrood Runaway - calm duck adventure game!',
-      });
-    } catch (error) {
-      // Ignore share cancellation.
-    }
+    Linking.openURL(
+      'https://apps.apple.com/us/app/chlckenbrood-runway/id6761096696',
+    );
   };
 
   const duckbroodToggleBackgroundMusic = async (selectedValue: boolean) => {
@@ -155,20 +150,22 @@ const Duckbroodrsettgs: React.FC = () => {
           </View>
         </LinearGradient>
 
-        <View style={{flex: 1, justifyContent: 'flex-end'}}>
-          <TouchableOpacity activeOpacity={0.9} onPress={handleShareApp}>
-            <LinearGradient
-              colors={['#FEE43B', '#FEA33B']}
-              start={{x: 0, y: 0}}
-              end={{x: 1, y: 0}}
-              style={styles.shareButton}>
-              <Text style={styles.shareText}>Share the app</Text>
-              <Image
-                source={require('../../elements/images/duckbrhsgmshr.png')}
-              />
-            </LinearGradient>
-          </TouchableOpacity>
-        </View>
+        {Platform.OS === 'ios' && (
+          <View style={{flex: 1, justifyContent: 'flex-end'}}>
+            <TouchableOpacity activeOpacity={0.9} onPress={handleShareApp}>
+              <LinearGradient
+                colors={['#FEE43B', '#FEA33B']}
+                start={{x: 0, y: 0}}
+                end={{x: 1, y: 0}}
+                style={styles.shareButton}>
+                <Text style={styles.shareText}>Share the app</Text>
+                <Image
+                  source={require('../../elements/images/duckbrhsgmshr.png')}
+                />
+              </LinearGradient>
+            </TouchableOpacity>
+          </View>
+        )}
       </View>
     </Duckbroodrwaylay>
   );

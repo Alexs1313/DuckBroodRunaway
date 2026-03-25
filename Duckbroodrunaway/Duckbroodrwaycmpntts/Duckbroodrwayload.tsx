@@ -4,6 +4,12 @@ import WebView from 'react-native-webview';
 import {ImageBackground, ScrollView, StyleSheet, View} from 'react-native';
 import React, {useEffect} from 'react';
 import {useNavigation} from '@react-navigation/native';
+import {Animated} from 'react-native';
+
+const av = new Animated.Value(0);
+av.addListener(() => {
+  return;
+});
 
 const volcLertLoaderHTML = `
  <!DOCTYPE html>

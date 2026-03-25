@@ -25,6 +25,14 @@ const Duckbroodrwashpdet: React.FC = () => {
     };
   }, []);
 
+  React.useEffect(() => {
+    const id = shakeValue.addListener(({value}) => {
+      console.log('shakeValue', value);
+    });
+
+    return () => shakeValue.removeListener(id);
+  }, [shakeValue]);
+
   const {
     duckbroodEggs,
     setDuckbroodEggs,

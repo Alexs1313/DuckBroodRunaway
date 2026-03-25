@@ -25,7 +25,7 @@ const Duckbroodrwastrsdet: React.FC = () => {
     try {
       await Share.share({message: `${title}\n\n${text}`});
     } catch (error) {
-      // Ignore cancelled share.
+      console.log('Error sharing story', error);
     }
   };
 

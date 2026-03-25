@@ -398,6 +398,15 @@ const Duckbroodrwastrs: React.FC = () => {
     };
   }, []);
 
+  React.useEffect(() => {
+    Object.values(storyShakeRef.current).forEach(value => {
+      const id = value.addListener(({value}) => {
+        console.log('storyShakeValue', value);
+      });
+      return () => value.removeListener(id);
+    });
+  }, []);
+
   const shakeStoryTradeButton = (storyId: string) => {
     const value = getStoryShakeValue(storyId);
     storyShakeAnimRef.current[storyId]?.stop();

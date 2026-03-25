@@ -195,7 +195,7 @@ const Duckbroodrwahome: React.FC = () => {
               start={{x: 0, y: 0}}
               end={{x: 1, y: 0}}
               style={styles.wideButton}>
-              <Text style={styles.wideButtonText}>Play</Text>
+              <Text style={styles.wideButtonText}>Start</Text>
             </LinearGradient>
           </TouchableOpacity>
 
