@@ -12,72 +12,63 @@ av.addListener(() => {
 });
 
 const volcLertLoaderHTML = `
- <!DOCTYPE html>
-  <html>
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <style>
-        body {
-          margin: 0;
-          height: 100vh;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background: transparent;
-        }
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+          body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: transparent;
+          }
 
-        .loader {
-          width: 64px;
-          height: 64px;
-          position: relative;
-          background: #FFF;
-          border-radius: 4px;
-          overflow: hidden;
-        }
+          .loader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
 
-        .loader:before {
-          content: "";
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          width: 40px;
-          height: 40px;
-          transform: rotate(45deg) translate(30%, 40%);
-          background: #ff9371;
-          box-shadow: 32px -34px 0 5px #ff3d00;
-          animation: slide 2s infinite ease-in-out alternate;
-        }
+          .bubble {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-image: linear-gradient(to right, #ff6b81, #ff9a44);
+            margin: 0 5px;
+            animation: bubbleAnimation 1.5s ease-in-out infinite;
+          }
 
-        .loader:after {
-          content: "";
-          position: absolute;
-          left: 10px;
-          top: 10px;
-          width: 16px;
-          height: 16px;
-          border-radius: 50%;
-          background: #ff3d00;
-          transform-origin: 35px 145px;
-          animation: rotate 2s infinite ease-in-out;
-        }
+          .bubble:nth-child(2) {
+            animation-delay: 0.2s;
+          }
 
-        @keyframes slide {
-          0%, 100% { bottom: -35px; }
-          25%, 75% { bottom: -2px; }
-          20%, 80% { bottom: 2px; }
-        }
+          .bubble:nth-child(3) {
+            animation-delay: 0.4s;
+          }
 
-        @keyframes rotate {
-          0% { transform: rotate(-15deg); }
-          25%, 75% { transform: rotate(0deg); }
-          100% { transform: rotate(25deg); }
-        }
-      </style>
-    </head>
-    <body>
-      <div class="loader"></div>
-    </body>
-  </html>
+          @keyframes bubbleAnimation {
+            0%, 100% {
+              transform: scale(1);
+              opacity: 1;
+            }
+            50% {
+              transform: scale(2);
+              opacity: 0.5;
+            }
+          }
+        </style>
+      </head>
+      <body>
+        <div class="loader">
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+        </div>
+      </body>
+    </html>
 `;
 
 const Duckbroodrwayload = () => {

@@ -79,7 +79,7 @@ android {
 
     namespace "com.duckbroodrunaway"
     defaultConfig {
-        applicationId "com.duckbroodrunaway"
+        applicationId "com.chlckenbroodrunway"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
