@@ -210,7 +210,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingHorizontal: 24,
     paddingVertical: 20,
-    marginBottom: 28,
   },
   factText: {
     color: '#fff',
@@ -221,6 +220,7 @@ const styles = StyleSheet.create({
   },
   generateButton: {
     width: 350,
+    marginTop: 28,
     maxWidth: '100%',
     height: 70,
     borderRadius: 20,
