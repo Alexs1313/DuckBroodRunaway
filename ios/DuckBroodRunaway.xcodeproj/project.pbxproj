@@ -11,6 +11,10 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		D179E3B82F71C328001BB78F /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D179E3B72F71C328001BB78F /* AVKit.framework */; };
+		D179E3BA2F71C330001BB78F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D179E3B92F71C330001BB78F /* AVFoundation.framework */; };
+		D179E3BC2F71C335001BB78F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D179E3BB2F71C335001BB78F /* AudioToolbox.framework */; };
+		D179E3BE2F71C348001BB78F /* white_records-childrens-short-music-for-video-vlog-42-sec-old-macdonald-had-a-farm-188185.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D179E3BD2F71C348001BB78F /* white_records-childrens-short-music-for-video-vlog-42-sec-old-macdonald-had-a-farm-188185.mp3 */; };
 		D318ED73C7CB9EDEA647A209 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +28,10 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-DuckBroodRunaway.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DuckBroodRunaway.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = DuckBroodRunaway/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = DuckBroodRunaway/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D179E3B72F71C328001BB78F /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		D179E3B92F71C330001BB78F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D179E3BB2F71C335001BB78F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D179E3BD2F71C348001BB78F /* white_records-childrens-short-music-for-video-vlog-42-sec-old-macdonald-had-a-farm-188185.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "white_records-childrens-short-music-for-video-vlog-42-sec-old-macdonald-had-a-farm-188185.mp3"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -32,6 +40,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D179E3BC2F71C335001BB78F /* AudioToolbox.framework in Frameworks */,
+				D179E3BA2F71C330001BB78F /* AVFoundation.framework in Frameworks */,
+				D179E3B82F71C328001BB78F /* AVKit.framework in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-DuckBroodRunaway.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +65,9 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D179E3BB2F71C335001BB78F /* AudioToolbox.framework */,
+				D179E3B92F71C330001BB78F /* AVFoundation.framework */,
+				D179E3B72F71C328001BB78F /* AVKit.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-DuckBroodRunaway.a */,
 			);
@@ -75,6 +89,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				D179E3BD2F71C348001BB78F /* white_records-childrens-short-music-for-video-vlog-42-sec-old-macdonald-had-a-farm-188185.mp3 */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -158,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D179E3BE2F71C348001BB78F /* white_records-childrens-short-music-for-video-vlog-42-sec-old-macdonald-had-a-farm-188185.mp3 in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				D318ED73C7CB9EDEA647A209 /* PrivacyInfo.xcprivacy in Resources */,
@@ -191,9 +207,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DuckBroodRunaway/Pods-DuckBroodRunaway-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DuckBroodRunaway/Pods-DuckBroodRunaway-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -230,9 +250,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DuckBroodRunaway/Pods-DuckBroodRunaway-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DuckBroodRunaway/Pods-DuckBroodRunaway-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -273,7 +297,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lkasfdkbrrod.alkkd.awy;
 				PRODUCT_NAME = DuckBroodRunaway;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -300,7 +324,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lkasfdkbrrod.alkkd.awy;
 				PRODUCT_NAME = DuckBroodRunaway;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -376,10 +400,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -448,10 +469,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
