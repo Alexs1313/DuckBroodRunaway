@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
   },
   volcLertWebview: {
     backgroundColor: 'transparent',
-    width: 260,
+    width: 261,
     height: 250,
   },
 });
