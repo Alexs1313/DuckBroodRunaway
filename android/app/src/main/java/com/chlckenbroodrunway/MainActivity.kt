@@ -1,4 +1,4 @@
-package com.duckbroodrunaway
+package com.chlckenbroodrunway
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

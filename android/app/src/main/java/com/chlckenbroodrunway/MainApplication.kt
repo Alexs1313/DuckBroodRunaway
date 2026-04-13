@@ -1,4 +1,4 @@
-package com.duckbroodrunaway
+package com.chlckenbroodrunway
 
 import android.app.Application
 import com.facebook.react.PackageList
